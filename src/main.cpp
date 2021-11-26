@@ -23,11 +23,7 @@ int main() {
                 window.close();
             }
 
-            if (event.KeyPressed) {
-                if (event.key.code == sf::Keyboard::Escape) {
-                    window.close();
-                }
-
+            if (event.type == sf::Event::KeyPressed) {
                 switch (event.key.code) {
                     case sf::Keyboard::Escape:
                         window.close();
